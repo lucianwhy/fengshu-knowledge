@@ -1,0 +1,34 @@
+MIT License
+
+Copyright (c) 2026 王皓月 (lucian-why)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Additional Attribution
+
+This Skill is based on the public writings of 碧树西风 (风叔), author of the WeChat
+Official Account "记忆承载" (Memory Bearer) and "西风的罗盘" (West Wind's Compass).
+
+The mind models, decision heuristics, and expression DNA were distilled from 120+
+paid articles (2021-2026) through systematic analysis. This distillation does NOT
+represent the author's own views or endorsement.
+
+Skill construction methodology: [女娲·Skill造人术](https://github.com/alchaincyf/nuwa-skill)
