@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="520" viewBox="0 0 1280 520" style="max-width:100%;height:auto" role="img" aria-labelledby="title desc">
+  <title id="title">Fengshu · 风叔知识库</title>
+  <desc id="desc">深绿色知识星图中，光点沿着文章、片段和来源之间的连线移动。让文章里的思考，成为可以继续对话的知识。</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b211c"/><stop offset="1" stop-color="#07120f"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#70ad70" stop-opacity=".16"/><stop offset="1" stop-color="#70ad70" stop-opacity="0"/></radialGradient>
+    <linearGradient id="line"><stop stop-color="#a5d6a7" stop-opacity=".1"/><stop offset=".5" stop-color="#d9eaa1" stop-opacity=".8"/><stop offset="1" stop-color="#a5d6a7" stop-opacity=".15"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#a4c6a7" stroke-opacity=".045"/></pattern>
+    <path id="route1" d="M834 162Q909 154 958 244"/>
+    <path id="route2" d="M958 244Q1033 230 1091 161"/>
+    <path id="route3" d="M958 244Q988 313 1075 350"/>
+    <path id="route4" d="M958 244Q871 262 826 348"/>
+    <style>
+      text{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif}
+      .mono{font-family:'SFMono-Regular',Consolas,monospace;letter-spacing:2px}
+      .orbit{transform-origin:958px 244px;animation:orbit 48s linear infinite}
+      .pulse{animation:pulse 4s ease-in-out infinite}
+      @keyframes orbit{to{transform:rotate(360deg)}}
+      @keyframes pulse{0%,100%{opacity:.25}50%{opacity:.7}}
+      @media(prefers-reduced-motion:reduce){.orbit,.pulse{animation:none}.traveler{display:none}}
+    </style>
+  </defs>
+  <rect x="1" y="1" width="1278" height="518" rx="24" fill="url(#bg)" stroke="#284536"/>
+  <rect x="1" y="1" width="1278" height="518" rx="24" fill="url(#grid)"/>
+  <circle cx="958" cy="244" r="293" fill="url(#halo)"/>
+  <path d="M64 82h22m-11-11v22" stroke="#c6df93" stroke-width="2"/>
+  <text x="103" y="87" fill="#c6df93" font-size="13" class="mono">FENGSHU / KNOWLEDGE</text>
+  <text x="64" y="192" fill="#f1f3e7" font-size="78" font-weight="650" letter-spacing="-3">Fengshu</text>
+  <text x="67" y="245" fill="#c6df93" font-size="28" font-weight="500" letter-spacing="7">风叔知识库</text>
+  <text x="67" y="309" fill="#e1e6d9" font-size="23">让文章里的思考，</text>
+  <text x="67" y="346" fill="#e1e6d9" font-size="23">成为可以继续对话的知识。</text>
+  <path d="M67 387H577" stroke="#315343"/>
+  <text x="67" y="421" fill="#91ab98" font-size="12" class="mono">RETRIEVE</text>
+  <circle cx="183" cy="417" r="2" fill="#c6df93"/>
+  <text x="202" y="421" fill="#91ab98" font-size="12" class="mono">READ IN CONTEXT</text>
+  <circle cx="393" cy="417" r="2" fill="#c6df93"/>
+  <text x="411" y="421" fill="#91ab98" font-size="12" class="mono">TRACE SOURCES</text>
+  <g fill="none" stroke="#56795b">
+    <circle cx="958" cy="244" r="178" stroke-opacity=".2"/>
+    <circle cx="958" cy="244" r="117" stroke-opacity=".15" stroke-dasharray="2 10"/>
+    <g class="orbit"><circle cx="958" cy="244" r="204" stroke-opacity=".25" stroke-dasharray="75 24 3 44"/></g>
+  </g>
+  <g fill="none" stroke="url(#line)" stroke-width="1.5">
+    <use href="#route1"/><use href="#route2"/><use href="#route3"/><use href="#route4"/>
+    <path d="M834 162Q995 58 1091 161M826 348Q967 414 1075 350" stroke-opacity=".35"/>
+  </g>
+  <g class="traveler" fill="#d9eaa1">
+    <circle r="3"><animateMotion dur="4s" repeatCount="indefinite" path="M834 162Q909 154 958 244"/></circle>
+    <circle r="3"><animateMotion dur="4s" begin="1s" repeatCount="indefinite" path="M958 244Q1033 230 1091 161"/></circle>
+    <circle r="3"><animateMotion dur="5s" begin=".5s" repeatCount="indefinite" path="M958 244Q988 313 1075 350"/></circle>
+    <circle r="3"><animateMotion dur="4.5s" begin="2s" repeatCount="indefinite" path="M958 244Q871 262 826 348"/></circle>
+  </g>
+  <circle cx="958" cy="244" r="48" fill="#132b20" stroke="#b8d48b" stroke-opacity=".6"/>
+  <circle cx="958" cy="244" r="58" fill="none" stroke="#b8d48b" class="pulse"/>
+  <text x="958" y="250" text-anchor="middle" fill="#e6edcf" font-size="15" class="mono">FENGSHU</text>
+  <g fill="#10251c" stroke="#557755">
+    <rect x="774" y="135" width="120" height="54" rx="12"/>
+    <rect x="1031" y="134" width="120" height="54" rx="12"/>
+    <rect x="1015" y="323" width="120" height="54" rx="12"/>
+    <rect x="766" y="321" width="120" height="54" rx="12"/>
+  </g>
+  <g text-anchor="middle" fill="#d5dfcb" font-size="15">
+    <text x="834" y="168">文章 · Articles</text>
+    <text x="1091" y="167">片段 · Chunks</text>
+    <text x="1075" y="356">来源 · Sources</text>
+    <text x="826" y="354">上下文 · Context</text>
+  </g>
+  <text x="958" y="482" text-anchor="middle" fill="#7e9a84" font-size="10" class="mono">SEMANTIC RETRIEVAL · MCP · SOURCE ATTRIBUTION</text>
+</svg>
