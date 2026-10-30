@@ -15,6 +15,14 @@ description: 基于风叔（碧树西风）文章检索其观点、梳理思维�
 
 可按需阅读 `references/frameworks.md` 查找常见分析角度，或 `references/knowledge_base/INDEX.md` 寻找本地素材。这些是整理者的概括，不是经过逐条核验的作者定论。
 
+## 连接 MCP
+
+用户明确要求连接或配置知识库时，直接开始当前环境支持的配置流程，不再反复询问「是否开始」。默认地址为 `https://fengshu.wanghaoyue.me/mcp`，传输选 Streamable HTTP，鉴权选「无」；不要求邮箱、GitHub 登录或 Token，不要发送环境自带的 `GITHUB_TOKEN`。
+
+先检查是否已有该 MCP。若客户端提供配置接口，完成添加后验证工具列表，并做一次真实检索；若工具列表在会话启动时固定，说明需要重新连接或新开会话。没有注册工具的接口时，给出当前客户端的最短设置步骤，区分「网络可达」「接口调用成功」和「已成为会话工具」，不要假装安装成功。不要搭建本地 OAuth 回调或要求用户手工获取 Token。
+
+默认入口按出口 IP 共享额度，调用 `get_fengshu_quota` 可查看剩余次数。备用 Cloudflare 服务仍需 GitHub OAuth，只有用户明确选择备用入口时才使用其认证流程。接入与额度规则见 [README.md](README.md#连接知识库-mcp)。
+
 ## MCP 检索流程
 
 工具可用时，按问题选择：`search_fengshu_knowledge` 的 `balanced` 用于一般主题，`semantic` 用于含义探索，`exact` 用于标题或短语。多个不同角度可用 `search_fengshu_knowledge_multi`（若客户端提供）；按 `document_id` 去重。搜索结果是线索，片段不够时优先调用 `get_chunk_context`（若提供）读取邻近段落；确有需要再用 `get_fengshu_article` 按 `next_offset` 分页。旧客户端可能只提供单次搜索和文章读取，以实际工具为准。
